@@ -1,0 +1,109 @@
+.bottom8 {
+    position: absolute;
+    bottom: -65px;
+    left: 500px;
+    height: 100px;
+    width: 600px;
+}
+
+.bottom8 .bough {
+    background: #2a1f56;
+}
+
+.bottom8 .body {
+    background: #2a1f56;
+}
+
+.bottom8 .tree .body:before {
+    display: none;
+}
+
+.bottom8 .tree:nth-child(1) {
+    font-size: 3px;
+    top: -4px;
+    left: 40px;
+}
+
+.bottom8 .tree:nth-child(2) {
+    font-size: 10px;
+    top: -65px;
+    left: 80px;
+}
+
+.bottom8 .tree:nth-child(3) {
+    font-size: 4px;
+    top: -10px;
+    left: 70px;
+}
+
+.bottom8 .tree:nth-child(4) {
+    font-size: 4px;
+    top: -10px;
+    left: 52px;
+}
+
+.bottom8 .tree:nth-child(5) {
+    font-size: 4px;
+    top: -15px;
+    left: 120px;
+}
+
+.bottom8 .tree:nth-child(6) {
+    font-size: 5px;
+    top: -30px;
+    left: 136px;
+}
+
+.bottom8 .tree:nth-child(7) {
+    font-size: 3px;
+    top: -8px;
+    left: 158px;
+}
+
+.bottom8 .tree:nth-child(8) {
+    font-size: 3.6px;
+    top: -20px;
+    left: 166px;
+}
+
+.bottom8 .tree:nth-child(9) {
+    font-size: 3.6px;
+    top: -20px;
+    left: 182px;
+}
+
+.bottom8 .tree:nth-child(10) {
+    font-size: 4.2px;
+    top: -32px;
+    left: 194px;
+}
+
+.bottom8 .tree:nth-child(11) {
+    font-size: 3.5px;
+    top: -20px;
+    left: 214px;
+}
+
+.bottom8 .tree:nth-child(12) {
+    font-size: 3.5px;
+    top: -26px;
+    left: 224px;
+}
+
+.bottom8 .tree:nth-child(13) {
+    font-size: 4.4px;
+    top: -36px;
+    left: 242px;
+}
+
+.bottom8 .tree:nth-child(14) {
+    font-size: 4.4px;
+    top: -36px;
+    left: 262px;
+}
+
+.bottom8 .tree:nth-child(15) {
+    font-size: 4.4px;
+    top: -45px;
+    left: 277px;
+}
