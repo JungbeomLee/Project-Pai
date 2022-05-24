@@ -22,20 +22,22 @@ function readURL(input) {
         removeUpload();
     }
 }
-
-//업로드된 사진을 지우는 함수
-function removeUpload() {
-    $('.file-upload-input').replaceWith($('.file-upload-input').clone());
-    $('.file-upload-content').hide();
-    $('.file-upload-content-2').hide();
-    $('.file-upload-to-server').hide();
-
-    $('.image-upload-wrap').show();
-    $('.file-upload-btn').show();
-}   
-$('.image-upload-wrap').bind('dragover', function () {
-    $('.image-upload-wrap').addClass('image-dropping');
-});
-$('.image-upload-wrap').bind('dragleave', function () {
-    $('.image-upload-wrap').removeClass('image-dropping');
+//업로드되 사진을 지우면 페이지를 이동하는 코드
+console.log()
+function handleFileSelect(event) {
+    var input = this;
+    console.log(input.files)
+    if (input.files && input.files.length) {
+        var reader = new FileReader();
+        this.enabled = false
+        reader.onload = (function (e) {
+        console.log(e)
+            $(".file-upload-content").html(['<img class="file-upload-image" src="', e.target.result, '" title="', escape(e.name), '"/>'].join(''))
+        });
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+$('#file').change(handleFileSelect);
+$('.file-edit-icon').on('click', '.preview-de', function () {
+    location.href="http://127.0.0.1:8000/main"
 });
