@@ -9,10 +9,10 @@
     <link rel="stylesheet" media="screen" href="../static/backMountain.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <title>Document</title>
+    <title>PROJECT PAI</title>
 </head>
 
 <body>
@@ -29,38 +29,43 @@
             SPECIES<br>
         </div>
 
-        <!--박스 클릭시 사진 업로드-->
-        <div class="image-upload-wrap">
-            <input class="file-upload-input" type='file' onmouseover="return turnOnWindowYellow();" onmouseout="return turnOffWindow();"  onchange="readURL(this);" accept="image/*" />
-            <div class="drag-text">
-                <h3>Drag and drop a file or select add Image</h3>
+        <!--파일 업로드 폼-->
+        <form action="http://127.0.0.1:8000/main" method="POST" enctype="multipart/form-data">
+
+            <!--박스 클릭시 사진 업로드-->
+            <div class="image-upload-wrap">
+                <input class="file-upload-input" type='file' onmouseover="return turnOnWindowYellow();"
+                    onmouseout="return turnOffWindow();" onchange="readURL(this);" accept="image/*" name="file" />
+                <div class="drag-text">
+                    <h3>Drag and drop a file or select add Image</h3>
+                </div>
             </div>
-        </div>
 
-        <!--업로드된 이미지가 들어가게 됨-->
-        <div class="file-upload-content">
-            <img class="file-upload-image" src="Aimodule/ai.html" alt="your image">
-        </div>
+            <!--버튼 클릭시 사진 업로드-->
+            <button class="file-upload-btn" type="button" onmouseover="return turnOnWindowYellow();"
+                onmouseout="return turnOffWindow();" onclick="$('.file-upload-input').trigger( 'click' )">
+                <a class="file-upload-btn-text">UPLOAD IMAGE 💾</a>
+            </button>
 
-        <!--업로드된 사진을 지우는 버튼-->
-        <div class="file-upload-content-2">
-            <div class="image-title-wrap">
-                <button type="button" onmouseover="return turnOnWindowRed();" onmouseout="return turnOffWindow();" onclick="removeUpload()" class="remove-image">
-                    Remove
-                    <span class>Uploaded Image</span>
-                </button>
+            <!--업로드된 사진을 지우는 버튼-->
+            <div class="file-upload-content-2">
+                <div class="image-title-wrap">
+                    <button type="button" onmouseover="return turnOnWindowRed();" onmouseout="return turnOffWindow();"
+                        onclick="removeUpload()"  class="remove-image">
+                        Remove Uploaded Image
+                    </button>
+                </div>
             </div>
-        </div>
 
-        <!--버튼 클릭시 사진 업로드-->
-        <button class="file-upload-btn" type="button" onmouseover="return turnOnWindowYellow();" onmouseout="return turnOffWindow();" onclick="$('.file-upload-input').trigger( 'click' )">
-            <a class="file-upload-btn-text">UPLOAD IMAGE 💾</a>
-        </button>
+            <!--업로드된 사진을 서버로 보내는 버튼-->
+            <input class="file-upload-to-server" onmouseover="return turnOnWindowGreen();"
+                onmouseout="return turnOffWindow();" type="submit" value="ANALYZE PHOTO">
 
-        <!--업로드된 사진을 서버로 보내는 버튼-->
-        <button class="file-upload-to-server" onmouseover="return turnOnWindowGreen();" onmouseout="return turnOffWindow();" type="button" onclick="location.href='./hello'">
-            <a class="file-upload-btn-server-text">ANALYZE PHOTO</a>
-        </button>
+            <!--업로드된 이미지가 들어가게 됨-->
+            <div class="file-upload-content">
+                <img class="file-upload-image" src="#" alt="your image" />
+            </div>
+        </form>
 
         <!--너무 밋밋해서 넣은 자연 친화적 배경-->
         <div class="container">
@@ -1292,42 +1297,18 @@
             </div>
         </div>
 
-    <!--멸종 위기종 목록과 설명이 들어가게 될거임-->
-    <div class="ENDANGERED">
+        <!--멸종 위기종 목록과 설명이 들어가게 될거임-->
+        <div class="ENDANGERED">
 
+        </div>
     </div>
-    </div>
+
 
 </body>
+<script type="text/javascript" src="../static/js/fileUpload.js"></script>
+<script type="text/javascript" src="../static/js/turnOnWindow.js"></script>
 
 </html>
-<script src="../static/js/script.js"></script>
-
-<!--real window animation-->
-<script>
-    //id window 를 windowColor로 저장
-    var windowColor = document.getElementById("window").style;
-    //창문 불 노란색 file-upload-btn 호버시
-    function turnOnWindowYellow(){
-        windowColor.backgroundColor = "#fed072";
-        windowColor.boxShadow = "0 0 10px 0.4px #fed072";
-    }
-    //창문 불 빨간색 remove-image 호버시
-    function turnOnWindowRed(){
-        windowColor.backgroundColor = "#D90D1E";
-        windowColor.boxShadow = "0 0 10px 0.4px #D90D1E";
-    }
-    //창문 불 연두색 file-upload-to-server 호버시
-    function turnOnWindowGreen(){
-        windowColor.backgroundColor = "#2DE388";
-        windowColor.boxShadow = "0 0 10px 0.4px #2DE388";
-    }
-    //창문 불 끄기
-    function turnOffWindow(){
-        windowColor.backgroundColor = "#073636";
-        windowColor.boxShadow = "0 0 10px 0.4px rgba(254, 208, 114, 0)";
-    }
-</script>
 
 
 

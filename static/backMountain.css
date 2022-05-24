@@ -1865,7 +1865,7 @@
     }
 }
 @media (min-width: 2560px){
-    body{
+    .container {
         display: none;
     }
 }

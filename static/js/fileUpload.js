@@ -1,4 +1,4 @@
- //사진을 업로드 하는 함수
+//사진을 업로드 하는 함수
 function readURL(input) {
     if (input.files && input.files[0]) {
 
@@ -32,7 +32,7 @@ function removeUpload() {
 
     $('.image-upload-wrap').show();
     $('.file-upload-btn').show();
-}
+}   
 $('.image-upload-wrap').bind('dragover', function () {
     $('.image-upload-wrap').addClass('image-dropping');
 });
