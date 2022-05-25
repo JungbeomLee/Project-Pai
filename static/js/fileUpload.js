@@ -39,5 +39,5 @@ function handleFileSelect(event) {
 }
 $('#file').change(handleFileSelect);
 $('.file-edit-icon').on('click', '.preview-de', function () {
-    location.href="http://127.0.0.1:8000/main"
+    location.href="http://127.0.0.1:8000/main/remove"
 });
