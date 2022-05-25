@@ -4,15 +4,20 @@ import string
 import random
 from werkzeug.utils import secure_filename
 from PIL import Image
+import os
 
 bp = Blueprint('main', __name__, url_prefix='/')
 _LENGTH = 5
 string_pool = string.ascii_letters + string.digits
 
+#404에러시 에러 페이지 보여줌
+@bp.app_errorhandler(404)
+def handle_404(err):
+    return render_template('error/page_not_found.html'), 404
 
 #메인링크
 @bp.route('/main')
-def index():
+def main():
     return render_template('index.html')
 
 #파일 업로드 저장
