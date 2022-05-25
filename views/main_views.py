@@ -13,7 +13,7 @@ string_pool = string.ascii_letters + string.digits
 #404에러시 에러 페이지 보여줌
 @bp.app_errorhandler(404)
 def handle_404(err):
-    return render_template('error/page_not_found.html'), 404
+    return render_template('error/404.html'), 404
 
 #메인링크
 @bp.route('/main')
