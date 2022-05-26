@@ -20,9 +20,9 @@
     <div style="position: relative;">
         <!--배경 텍스트 -->
         <div class="background-text">
-            P&P<br>
-            PROJECT<br>
-            PAI<br>
+            E.S.C<br>
+            ENDANGERED<br>
+            SPECIES CATCH<br>
             YOU CAN<br>
             FIND<br>
             ENDANGERED<br>
@@ -34,25 +34,22 @@
 
             <!--박스 클릭시 사진 업로드-->
             <div class="image-upload-wrap">
-                <input class="file-upload-input" type='file' onmouseover="return turnOnWindowYellow();"
-                    onmouseout="return turnOffWindow();" onchange="readURL(this);" accept="image/*" name="file" />
+                <input class="file-upload-input" type='file' onmouseover="return turnOnWindowYellow();" onmouseout="return turnOffWindow();" onchange="readURL(this);" accept="image/*" name="file" />
                 <div class="drag-text">
                     <h3>Drag and drop a file or select add Image</h3>
                 </div>
             </div>
 
             <!--버튼 클릭시 사진 업로드-->
-            <button class="file-upload-btn" type="button" onmouseover="return turnOnWindowYellow();"
-                onmouseout="return turnOffWindow();" onclick="$('.file-upload-input').trigger( 'click' )">
+            <button class="file-upload-btn" type="button" onmouseover="return turnOnWindowYellow();" onmouseout="return turnOffWindow();" onclick="$('.file-upload-input').trigger( 'click' )">
                 <a class="file-upload-btn-text">UPLOAD IMAGE 💾</a>
             </button>
 
             <!--업로드된 사진을 지우는 버튼-->
             <div class="file-upload-content-2">
                 <div class="image-title-wrap file-edit-icon">
-                    <button type="button" onmouseover="return turnOnWindowRed();" onmouseout="return turnOffWindow();"
-                        class="remove-image preview-de">
-                        Remove Uploaded Image
+                    <button type="button" onmouseover="return turnOnWindowRed();" onmouseout="return turnOffWindow();" class="remove-image preview-de">
+                        <a class="remove-image-text">REMOVE IMAGE</a>
                     </button>
                 </div>
             </div>
