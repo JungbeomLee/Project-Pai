@@ -41,9 +41,3 @@ def uploader_file():
 
         return render_template('index.html') 
         
-
-#업로드된 이미지 삭제시 페이지 이동
-@bp.route('/main')
-def img_remove():
-    return render_template('index.html')
-

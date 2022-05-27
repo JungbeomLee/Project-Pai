@@ -15,8 +15,7 @@ function readURL(input) {
             $('.file-upload-to-server').show();
             $('.image-title').html(input.files[0].name);
             document.getElementsByClassName("remove-image")[0].style.display = "block"
-            document.getElementsByClassName("file-upload-input")[0].value=null
-            
+            document.getElementsByClassName("file-upload-input")[0].value = null
         };
         
         reader.readAsDataURL(input.files[0]);
