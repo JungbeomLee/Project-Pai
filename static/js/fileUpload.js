@@ -1,43 +1,39 @@
-//사진을 업로드 하는 함수
+//사진을 업로드하는 코드
 function readURL(input) {
-    if (input.files && input.files[0]) {
+    
 
-        var reader = new FileReader();
+    var reader = new FileReader();
 
-        reader.onload = function (e) {
-            $('.image-upload-wrap').hide();
-            $('.file-upload-btn').hide();
+    reader.onload = function (e) {
+        console.log("파일 올라갑니당~");
+        $('.image-upload-wrap').hide();
+        $('.file-upload-btn').hide();
 
-            $('.file-upload-image').attr('src', e.target.result);
-            $('.file-upload-content').show();
-            $('.file-upload-content-2').show();
-            $('.file-upload-to-server').show();
-
-            $('.image-title').html(input.files[0].name);
-        };
-
-        reader.readAsDataURL(input.files[0]);
-
-    } else {
-        removeUpload();
-    }
+        $('.file-upload-image').attr('src', e.target.result);
+        $('.file-upload-content').show();
+        $('.file-upload-content-2').show();
+        $('.file-upload-to-server').show();
+        $('.image-title').html(input.files[0].name);
+        document.getElementsByClassName("remove-image")[0].style.display = "block"
+        document.getElementsByClassName("file-upload-input")[0].value=input.files[0]
+    };
+    
+    reader.readAsDataURL(input.files[0]);
 }
-//업로드되 사진을 지우면 페이지를 이동하는 코드
-console.log()
-function handleFileSelect(event) {
-    var input = this;
-    console.log(input.files)
-    if (input.files && input.files.length) {
-        var reader = new FileReader();
-        this.enabled = false
-        reader.onload = (function (e) {
-        console.log(e)
-            $(".file-upload-content").html(['<img class="file-upload-image" src="', e.target.result, '" title="', escape(e.name), '"/>'].join(''))
-        });
-        reader.readAsDataURL(input.files[0]);
-    }
-}
-$('#file').change(handleFileSelect);
+
+//업로드된 사진을 지우는 코드
 $('.file-edit-icon').on('click', '.preview-de', function () {
-    location.href="http://127.0.0.1:8000/main/remove"
+console.log("지워집니당~");
+document.getElementsByClassName('file-upload-image')[0].remove()
+newimg = document.createElement('img')
+newimg.setAttribute("class", "file-upload-image")
+newimg.setAttribute("src", "#")
+document.getElementsByClassName('file-upload-content')[0].appendChild(newimg)
+document.getElementsByClassName('file-upload-content')[0].style.display = "none"
+document.getElementsByClassName("file-upload-btn")[0].style.display = "inline-block"
+document.getElementsByClassName("file-upload-to-server")[0].style.display = "none"
+document.getElementsByClassName("remove-image")[0].style.display = "none"
+document.getElementsByClassName("file-upload-input")[0].value=null
+$('.image-upload-wrap').show();
+$('.file-upload-btn').show();
 });

@@ -10,14 +10,14 @@
     
     .background-text {
         position: absolute;
-        text-shadow: 0.6vw 1vh 0 rgba(0, 0, 0, 0.35);
+        text-shadow: 0.3vw 0.3vw 0 rgba(0, 0, 0, 0.35);
         font-family: 'Oswald';
-        font-size: 8vh;
+        font-size: 4vw;
         opacity: 0.5;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
-        margin: 1vh 7.1vw 0 1vw;
+        margin: 1vw 7.1vw 0 1vw;
         line-height: 1.07;
         letter-spacing: normal;
         text-align: left;
@@ -250,14 +250,14 @@
     
     .background-text {
         position: absolute;
-        text-shadow: 0.6vw 1vh 0 rgba(0, 0, 0, 0.35);
+        text-shadow: 0.6vw 1vw 0 rgba(0, 0, 0, 0.35);
         font-family: 'Oswald';
-        font-size: 8vh;
+        font-size: 8vw;
         opacity: 0.5;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
-        margin: 1vh 7.1vw 0 1vw;
+        margin: 1vw 7.1vw 0 1vw;
         line-height: 1.07;
         letter-spacing: normal;
         text-align: left;
@@ -364,14 +364,14 @@
     .file-upload-content {
         position: absolute;
         display: none;
-        width: 15.3vw;
+        width: 50vw;
         height: 30vh;
         border: dashed 4.4px #025e73;
         box-shadow: 0.6vw 1vh 0 rgba(0, 0, 0, 0.35);
-        margin: 28.2vh 41.5vw 0 41.5vw;
+        margin: 28.2vh 0 0 23.5vw;
         z-index: 10;
         font-size: 1vw;
-        background-color: none;
+        background-color: rgba(2, 94, 115, 0.5);
     }
     
     .file-upload-content-2 {
@@ -471,8 +471,8 @@
     
     
     .file-upload-image {
-        max-width: 15.3vw;
-        max-height: 30vh;
+        max-width: 100%;
+        max-height: 100%;
     }
     
 }
