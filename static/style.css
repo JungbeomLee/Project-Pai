@@ -1,3 +1,720 @@
+@media (min-width: 152px) and (max-width: 539px){
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-color: #36b1c0;
+    }
+    
+    .background-text {
+        position: absolute;
+        text-shadow: 0.6vw 1vw 0 rgba(0, 0, 0, 0.35);
+        font-family: 'Oswald';
+        font-size: 8vw;
+        opacity: 0.5;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        margin: 1vw 7.1vw 0 1vw;
+        line-height: 1.07;
+        letter-spacing: normal;
+        text-align: left;
+        color: #b7e7f3;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        z-index: 2;
+    }
+    
+    .file-upload {
+        background-color: #ffffff;
+        width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .file-upload-btn {
+        position: absolute;
+        width: 32vw;
+        height: 5vh;
+        border-radius: 4px;
+        border: none;
+        border-bottom: 4px solid #B37504;
+        box-shadow: 0.6vw 1vh 0 rgba(0, 0, 0, 0.35);
+        background-color: #f29f05;
+        margin: 67vh 0 0 33.5vw;
+        font-family: 'Oswald';
+        font-size: 3vw;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 14vw;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        z-index: 5;
+    }
+    
+    .file-upload-btn:active {
+        border: 0;
+        transition: all .2s ease;
+    }
+    
+    .file-upload-btn-text {
+        position: absolute;
+        margin: -3.5vh 1.5vw 0 5vw;
+    }
+    
+    .file-upload-btn:hover .file-upload-btn-text {
+        color: #ffffff;
+        transition: all .2s ease;
+        cursor: pointer;
+    }
+    
+    .file-upload-to-server {
+        position: absolute;
+        display: none;
+        width: 32vw;
+        height: 5vh;
+        border-radius: 4px;
+        border: none;
+        border-bottom: 4px solid #2DE388;
+        box-shadow: 0.6vw 1vh 0 rgba(0, 0, 0, 0.35);
+        background-color: #5CF58A;
+        margin: 67vh 0 0 33.5vw;
+        font-family: 'Oswald';
+        font-size: 3vw;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #000;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        z-index: 5;
+    }
+    
+    .file-upload-to-server:active {
+        border: 0;
+        transition: all .2s ease;
+    }
+    
+    .file-upload-to-server:hover {
+        color: #ffffff;
+        transition: all .2s ease;
+        cursor: pointer;
+    }
+    
+    .file-upload-content {
+        position: absolute;
+        display: none;
+        width: 50vw;
+        height: 30vh;
+        border: dashed 4.4px #025e73;
+        box-shadow: 0.6vw 1vh 0 rgba(0, 0, 0, 0.35);
+        margin: 28.2vh 0 0 23.5vw;
+        z-index: 10;
+        font-size: 1vw;
+        background-color: rgba(2, 94, 115, 0.5);
+    }
+    
+    .file-upload-content-2 {
+        position: absolute;
+        display: none;
+        width: 15.3vw;
+        height: 40vh;
+        margin: 28.2vh 42.3vw 0 42.3vw;
+    }
+    
+    .remove-image {
+        position: absolute;
+        margin: 34vh 0 0 -6vw;
+        height: 3vh;
+        width: 20.4vw;
+        color: #fff;
+        background: #cd4535;
+        box-shadow: 0.6vw 1vh 0 rgba(0, 0, 0, 0.35);
+        border: none;
+        border-radius: 4px;
+        border-bottom: 4px solid #b02818;
+        font-weight: 700;
+        font-size: 0.8vw;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        z-index: 3;
+    }
+    
+    .remove-image:hover {
+        background: #c13b2a;
+        color: #ffffff;
+        transition: all .2s ease;
+        cursor: pointer;
+    }
+    
+    .remove-image:active {
+        border: 0;
+        transition: all .2s ease;
+    }
+    
+    .file-upload-input {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        outline: none;
+        opacity: 0;
+        cursor: pointer;
+    }
+    
+    .image-upload-wrap {
+        position: absolute;
+        width: 50vw;
+        height: 30vh;
+        border: dashed 4.4px #025e73;
+        box-shadow: 0.6vw 1vh 0 rgba(0, 0, 0, 0.35);
+        margin: 28.2vh 0 0 23.5vw;
+        z-index: 10;
+        font-size: 1vw;
+        background-color: rgba(2, 94, 115, 0.5);
+    }
+    
+    .image-dropping,
+    .image-upload-wrap:hover {
+        background-color: rgba(54, 177, 192, 0.5);
+        border: 4px dashed #025e73;
+    }
+    
+    .image-title-wrap {
+        padding: 0 15px 15px 15px;
+        color: #222;
+    }
+    
+    .drag-text {
+        text-align: center;
+    }
+    
+    .drag-text h3 {
+        font-weight: 100;
+        font-size: 3vw;
+        text-transform: uppercase;
+        color: #b7e7f3;
+        margin: 5vh 0 5vh 0;
+        padding: 60px 0;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    
+    .file-upload-image {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+}
+
+@media (min-width: 540px) and (max-width: 767px){
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-color: #36b1c0;
+    }
+    
+    .background-text {
+        position: absolute;
+        text-shadow: 0.6vw 1vw 0 rgba(0, 0, 0, 0.35);
+        font-family: 'Oswald';
+        font-size: 8vw;
+        opacity: 0.5;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        margin: 1vw 7.1vw 0 1vw;
+        line-height: 1.07;
+        letter-spacing: normal;
+        text-align: left;
+        color: #b7e7f3;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        z-index: 2;
+    }
+    
+    .file-upload {
+        background-color: #ffffff;
+        width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .file-upload-btn {
+        position: absolute;
+        width: 32vw;
+        height: 6vh;
+        border-radius: 4px;
+        border: none;
+        border-bottom: 4px solid #B37504;
+        box-shadow: 0.6vw 1vh 0 rgba(0, 0, 0, 0.35);
+        background-color: #f29f05;
+        margin: 67vh 0 0 33.5vw;
+        font-family: 'Oswald';
+        font-size: 3vw;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 10vw;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        z-index: 5;
+    }
+    
+    .file-upload-btn:active {
+        border: 0;
+        transition: all .2s ease;
+    }
+    
+    .file-upload-btn-text {
+        position: absolute;
+        margin: -3.5vh 1.5vw 0 5vw;
+    }
+    
+    .file-upload-btn:hover .file-upload-btn-text {
+        color: #ffffff;
+        transition: all .2s ease;
+        cursor: pointer;
+    }
+    
+    .file-upload-to-server {
+        position: absolute;
+        display: none;
+        width: 32vw;
+        height: 5vh;
+        border-radius: 4px;
+        border: none;
+        border-bottom: 4px solid #2DE388;
+        box-shadow: 0.6vw 1vh 0 rgba(0, 0, 0, 0.35);
+        background-color: #5CF58A;
+        margin: 67vh 0 0 33.5vw;
+        font-family: 'Oswald';
+        font-size: 3vw;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #000;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        z-index: 5;
+    }
+    
+    .file-upload-to-server:active {
+        border: 0;
+        transition: all .2s ease;
+    }
+    
+    .file-upload-to-server:hover {
+        color: #ffffff;
+        transition: all .2s ease;
+        cursor: pointer;
+    }
+    
+    .file-upload-content {
+        position: absolute;
+        display: none;
+        width: 50vw;
+        height: 30vh;
+        border: dashed 4.4px #025e73;
+        box-shadow: 0.6vw 1vh 0 rgba(0, 0, 0, 0.35);
+        margin: 28.2vh 0 0 23.5vw;
+        z-index: 10;
+        font-size: 1vw;
+        background-color: rgba(2, 94, 115, 0.5);
+    }
+    
+    .file-upload-content-2 {
+        position: absolute;
+        display: none;
+        width: 15.3vw;
+        height: 40vh;
+        margin: 28.2vh 42.3vw 0 42.3vw;
+    }
+    
+    .remove-image {
+        position: absolute;
+        margin: 34vh 0 0 -6vw;
+        height: 3vh;
+        width: 20.4vw;
+        color: #fff;
+        background: #cd4535;
+        box-shadow: 0.6vw 1vh 0 rgba(0, 0, 0, 0.35);
+        border: none;
+        border-radius: 4px;
+        border-bottom: 4px solid #b02818;
+        font-weight: 700;
+        font-size: 0.8vw;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        z-index: 3;
+    }
+    
+    .remove-image:hover {
+        background: #c13b2a;
+        color: #ffffff;
+        transition: all .2s ease;
+        cursor: pointer;
+    }
+    
+    .remove-image:active {
+        border: 0;
+        transition: all .2s ease;
+    }
+    
+    .file-upload-input {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        outline: none;
+        opacity: 0;
+        cursor: pointer;
+    }
+    
+    .image-upload-wrap {
+        position: absolute;
+        width: 50vw;
+        height: 30vh;
+        border: dashed 4.4px #025e73;
+        box-shadow: 0.6vw 1vh 0 rgba(0, 0, 0, 0.35);
+        margin: 28.2vh 0 0 23.5vw;
+        z-index: 10;
+        font-size: 1vw;
+        background-color: rgba(2, 94, 115, 0.5);
+    }
+    
+    .image-dropping,
+    .image-upload-wrap:hover {
+        background-color: rgba(54, 177, 192, 0.5);
+        border: 4px dashed #025e73;
+    }
+    
+    .image-title-wrap {
+        padding: 0 15px 15px 15px;
+        color: #222;
+    }
+    
+    .drag-text {
+        text-align: center;
+    }
+    
+    .drag-text h3 {
+        font-weight: 100;
+        font-size: 3vw;
+        text-transform: uppercase;
+        color: #b7e7f3;
+        margin: 5vh 0 5vh 0;
+        padding: 60px 0;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    
+    .file-upload-image {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-color: #36b1c0;
+    }
+    
+    .background-text {
+        position: absolute;
+        text-shadow: 0.6vw 1vw 0 rgba(0, 0, 0, 0.35);
+        font-family: 'Oswald';
+        font-size: 8vw;
+        opacity: 0.5;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        margin: 1vw 7.1vw 0 1vw;
+        line-height: 1.07;
+        letter-spacing: normal;
+        text-align: left;
+        color: #b7e7f3;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        z-index: 2;
+    }
+    
+    .file-upload {
+        background-color: #ffffff;
+        width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .file-upload-btn {
+        position: absolute;
+        width: 32vw;
+        height: 6vh;
+        border-radius: 4px;
+        border: none;
+        border-bottom: 4px solid #B37504;
+        box-shadow: 0.6vw 1vh 0 rgba(0, 0, 0, 0.35);
+        background-color: #f29f05;
+        margin: 67vh 0 0 33.5vw;
+        font-family: 'Oswald';
+        font-size: 3vw;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 10vw;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        z-index: 5;
+    }
+    
+    .file-upload-btn:active {
+        border: 0;
+        transition: all .2s ease;
+    }
+    
+    .file-upload-btn-text {
+        position: absolute;
+        margin: -3.5vh 1.5vw 0 5vw;
+    }
+    
+    .file-upload-btn:hover .file-upload-btn-text {
+        color: #ffffff;
+        transition: all .2s ease;
+        cursor: pointer;
+    }
+    
+    .file-upload-to-server {
+        position: absolute;
+        display: none;
+        width: 32vw;
+        height: 5vh;
+        border-radius: 4px;
+        border: none;
+        border-bottom: 4px solid #2DE388;
+        box-shadow: 0.6vw 1vh 0 rgba(0, 0, 0, 0.35);
+        background-color: #5CF58A;
+        margin: 67vh 0 0 33.5vw;
+        font-family: 'Oswald';
+        font-size: 3vw;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #000;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        z-index: 5;
+    }
+    
+    .file-upload-to-server:active {
+        border: 0;
+        transition: all .2s ease;
+    }
+    
+    .file-upload-to-server:hover {
+        color: #ffffff;
+        transition: all .2s ease;
+        cursor: pointer;
+    }
+    
+    .file-upload-content {
+        position: absolute;
+        display: none;
+        width: 50vw;
+        height: 30vh;
+        border: dashed 4.4px #025e73;
+        box-shadow: 0.6vw 1vh 0 rgba(0, 0, 0, 0.35);
+        margin: 28.2vh 0 0 23.5vw;
+        z-index: 10;
+        font-size: 1vw;
+        background-color: rgba(2, 94, 115, 0.5);
+    }
+    
+    .file-upload-content-2 {
+        position: absolute;
+        display: none;
+        width: 15.3vw;
+        height: 40vh;
+        margin: 28.2vh 42.3vw 0 42.3vw;
+    }
+    
+    .remove-image {
+        position: absolute;
+        margin: 34vh 0 0 -6vw;
+        height: 3vh;
+        width: 20.4vw;
+        color: #fff;
+        background: #cd4535;
+        box-shadow: 0.6vw 1vh 0 rgba(0, 0, 0, 0.35);
+        border: none;
+        border-radius: 4px;
+        border-bottom: 4px solid #b02818;
+        font-weight: 700;
+        font-size: 0.8vw;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        z-index: 3;
+    }
+    
+    .remove-image:hover {
+        background: #c13b2a;
+        color: #ffffff;
+        transition: all .2s ease;
+        cursor: pointer;
+    }
+    
+    .remove-image:active {
+        border: 0;
+        transition: all .2s ease;
+    }
+    
+    .file-upload-input {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        outline: none;
+        opacity: 0;
+        cursor: pointer;
+    }
+    
+    .image-upload-wrap {
+        position: absolute;
+        width: 50vw;
+        height: 30vh;
+        border: dashed 4.4px #025e73;
+        box-shadow: 0.6vw 1vh 0 rgba(0, 0, 0, 0.35);
+        margin: 28.2vh 0 0 23.5vw;
+        z-index: 10;
+        font-size: 1vw;
+        background-color: rgba(2, 94, 115, 0.5);
+    }
+    
+    .image-dropping,
+    .image-upload-wrap:hover {
+        background-color: rgba(54, 177, 192, 0.5);
+        border: 4px dashed #025e73;
+    }
+    
+    .image-title-wrap {
+        padding: 0 15px 15px 15px;
+        color: #222;
+    }
+    
+    .drag-text {
+        text-align: center;
+    }
+    
+    .drag-text h3 {
+        font-weight: 100;
+        font-size: 3vw;
+        text-transform: uppercase;
+        color: #b7e7f3;
+        margin: 5vh 0 5vh 0;
+        padding: 60px 0;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    
+    .file-upload-image {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+}
+
 @media (min-width: 1025px){
     * {
         margin: 0;
@@ -236,243 +953,4 @@
         max-width: 15.3vw;
         max-height: 30vh;
     }
-}
-
-@media (min-width: 152px) and (max-width: 1024px){
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    
-    body {
-        background-color: #36b1c0;
-    }
-    
-    .background-text {
-        position: absolute;
-        text-shadow: 0.6vw 1vw 0 rgba(0, 0, 0, 0.35);
-        font-family: 'Oswald';
-        font-size: 8vw;
-        opacity: 0.5;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        margin: 1vw 7.1vw 0 1vw;
-        line-height: 1.07;
-        letter-spacing: normal;
-        text-align: left;
-        color: #b7e7f3;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        z-index: 2;
-    }
-    
-    .file-upload {
-        background-color: #ffffff;
-        width: 600px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-    
-    .file-upload-btn {
-        position: absolute;
-        width: 32vw;
-        height: 5vh;
-        border-radius: 4px;
-        border: none;
-        border-bottom: 4px solid #B37504;
-        box-shadow: 0.6vw 1vh 0 rgba(0, 0, 0, 0.35);
-        background-color: #f29f05;
-        margin: 67vh 0 0 33.5vw;
-        font-family: 'Oswald';
-        font-size: 3vw;
-        font-weight: 600;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 14vw;
-        letter-spacing: normal;
-        text-align: left;
-        color: #000;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        z-index: 5;
-    }
-    
-    .file-upload-btn:active {
-        border: 0;
-        transition: all .2s ease;
-    }
-    
-    .file-upload-btn-text {
-        position: absolute;
-        margin: -3.5vh 1.5vw 0 5vw;
-    }
-    
-    .file-upload-btn:hover .file-upload-btn-text {
-        color: #ffffff;
-        transition: all .2s ease;
-        cursor: pointer;
-    }
-    
-    .file-upload-to-server {
-        position: absolute;
-        display: none;
-        width: 32vw;
-        height: 5vh;
-        border-radius: 4px;
-        border: none;
-        border-bottom: 4px solid #2DE388;
-        box-shadow: 0.6vw 1vh 0 rgba(0, 0, 0, 0.35);
-        background-color: #5CF58A;
-        margin: 67vh 0 0 33.5vw;
-        font-family: 'Oswald';
-        font-size: 3vw;
-        font-weight: 600;
-        font-stretch: normal;
-        font-style: normal;
-        letter-spacing: normal;
-        text-align: center;
-        color: #000;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        z-index: 5;
-    }
-    
-    .file-upload-to-server:active {
-        border: 0;
-        transition: all .2s ease;
-    }
-    
-    .file-upload-to-server:hover {
-        color: #ffffff;
-        transition: all .2s ease;
-        cursor: pointer;
-    }
-    
-    .file-upload-content {
-        position: absolute;
-        display: none;
-        width: 50vw;
-        height: 30vh;
-        border: dashed 4.4px #025e73;
-        box-shadow: 0.6vw 1vh 0 rgba(0, 0, 0, 0.35);
-        margin: 28.2vh 0 0 23.5vw;
-        z-index: 10;
-        font-size: 1vw;
-        background-color: rgba(2, 94, 115, 0.5);
-    }
-    
-    .file-upload-content-2 {
-        position: absolute;
-        display: none;
-        width: 15.3vw;
-        height: 40vh;
-        margin: 28.2vh 42.3vw 0 42.3vw;
-    }
-    
-    .remove-image {
-        position: absolute;
-        margin: 34vh 0 0 -6vw;
-        height: 3vh;
-        width: 20.4vw;
-        color: #fff;
-        background: #cd4535;
-        box-shadow: 0.6vw 1vh 0 rgba(0, 0, 0, 0.35);
-        border: none;
-        border-radius: 4px;
-        border-bottom: 4px solid #b02818;
-        font-weight: 700;
-        font-size: 0.8vw;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        z-index: 3;
-    }
-    
-    .remove-image:hover {
-        background: #c13b2a;
-        color: #ffffff;
-        transition: all .2s ease;
-        cursor: pointer;
-    }
-    
-    .remove-image:active {
-        border: 0;
-        transition: all .2s ease;
-    }
-    
-    .file-upload-input {
-        position: absolute;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        outline: none;
-        opacity: 0;
-        cursor: pointer;
-    }
-    
-    .image-upload-wrap {
-        position: absolute;
-        width: 50vw;
-        height: 30vh;
-        border: dashed 4.4px #025e73;
-        box-shadow: 0.6vw 1vh 0 rgba(0, 0, 0, 0.35);
-        margin: 28.2vh 0 0 23.5vw;
-        z-index: 10;
-        font-size: 1vw;
-        background-color: rgba(2, 94, 115, 0.5);
-    }
-    
-    .image-dropping,
-    .image-upload-wrap:hover {
-        background-color: rgba(54, 177, 192, 0.5);
-        border: 4px dashed #025e73;
-    }
-    
-    .image-title-wrap {
-        padding: 0 15px 15px 15px;
-        color: #222;
-    }
-    
-    .drag-text {
-        text-align: center;
-    }
-    
-    .drag-text h3 {
-        font-weight: 100;
-        font-size: 3vw;
-        text-transform: uppercase;
-        color: #b7e7f3;
-        margin: 5vh 0 5vh 0;
-        padding: 60px 0;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-    }
-    
-    
-    .file-upload-image {
-        max-width: 100%;
-        max-height: 100%;
-    }
-    
 }
