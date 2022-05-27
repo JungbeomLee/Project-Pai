@@ -1,4 +1,4 @@
-//사진을 업로드 하는 함수
+//사진을 업로드하는 코드
 function readURL(input) {
     
 
@@ -19,11 +19,9 @@ function readURL(input) {
     };
     
     reader.readAsDataURL(input.files[0]);
-
-
 }
-//업로드 사진을 지우면 페이지를 이동하는 코드
 
+//업로드된 사진을 지우는 코드
 $('.file-edit-icon').on('click', '.preview-de', function () {
 console.log("지워집니당~");
 document.getElementsByClassName('file-upload-image')[0].remove()
