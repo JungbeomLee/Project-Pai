@@ -15,8 +15,7 @@ function readURL(input) {
         $('.file-upload-to-server').show();
         $('.image-title').html(input.files[0].name);
         document.getElementsByClassName("remove-image")[0].style.display = "block"
-        document.getElementsByClassName("file-upload-input")[0].value=null
-        
+        document.getElementsByClassName("file-upload-input")[0].value=input.files[0]
     };
     
     reader.readAsDataURL(input.files[0]);
@@ -36,6 +35,7 @@ document.getElementsByClassName('file-upload-content')[0].style.display = "none"
 document.getElementsByClassName("file-upload-btn")[0].style.display = "inline-block"
 document.getElementsByClassName("file-upload-to-server")[0].style.display = "none"
 document.getElementsByClassName("remove-image")[0].style.display = "none"
+document.getElementsByClassName("file-upload-input")[0].value=null
 $('.image-upload-wrap').show();
 $('.file-upload-btn').show();
 });
