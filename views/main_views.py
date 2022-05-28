@@ -20,6 +20,14 @@ def handle_404(err):
 def main():
     return render_template('index.html')
 
+@bp.route('/main/Fox')
+def Fox():
+    return render_template('AnimalTheme/Fox.html')
+
+@bp.route('/main/Polarbear')
+def Polarbear():
+    return render_template('AnimalTheme/Polarbear.html')
+
 #파일 업로드 저장
 @bp.route('/main', methods = ['GET', 'POST'])
 def uploader_file():

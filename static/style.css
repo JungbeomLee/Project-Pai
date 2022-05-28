@@ -10,13 +10,6 @@
     
     .background-text {
         position: absolute;
-        text-shadow: 0.6vw 1vw 0 rgba(0, 0, 0, 0.35);
-        font-family: 'Oswald';
-        font-size: 4vh;    
-        opacity: 0.5;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
         margin: 1vw 7.1vw 0 1vw;
         line-height: 1.07;
         letter-spacing: normal;
@@ -29,6 +22,42 @@
         -ms-user-select: none;
         user-select: none;
         z-index: 2;
+    } 
+
+    .background-text-details {
+        text-shadow: 0.3vw 0.3vw 0 rgba(0, 0, 0, 0.35);
+        font-family: 'Oswald';
+        font-size: 3vw;
+        opacity: 0.5;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        transition: all .2s ease-in-out;
+    }  
+
+    .change-theme{
+        text-shadow: 0.3vw 0.3vw 0 rgba(0, 0, 0, 0.35);
+        font-family: 'Oswald';
+        font-size: 3vw;
+        opacity: 0.5;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        transition: all .2s ease-in-out;
+    }
+
+    #F-fox:hover {
+        transition: all .2s ease-in-out;
+        opacity: 1;
+        font-size: 5vw;
+        color: #F27127;
+    }
+
+    #P-Polar-bear:hover {
+        opacity: 1;
+        transition: all .2s ease-in-out;
+        font-size: 5vw;
+        color: #E9ECF2;
     }
     
     .file-upload {
@@ -253,13 +282,6 @@
     
     .background-text {
         position: absolute;
-        text-shadow: 0.6vw 1vw 0 rgba(0, 0, 0, 0.35);
-        font-family: 'Oswald';
-        font-size: 4vh;   
-        opacity: 0.5;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: medium;
         margin: 1vw 7.1vw 0 1vw;
         line-height: 1.07;
         letter-spacing: normal;
@@ -272,6 +294,42 @@
         -ms-user-select: none;
         user-select: none;
         z-index: 2;
+    } 
+
+    .background-text-details {
+        text-shadow: 0.3vw 0.3vw 0 rgba(0, 0, 0, 0.35);
+        font-family: 'Oswald';
+        font-size: 3vw;
+        opacity: 0.5;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        transition: all .2s ease-in-out;
+    }  
+
+    .change-theme{
+        text-shadow: 0.3vw 0.3vw 0 rgba(0, 0, 0, 0.35);
+        font-family: 'Oswald';
+        font-size: 3vw;
+        opacity: 0.5;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        transition: all .2s ease-in-out;
+    }
+
+    #F-fox:hover {
+        transition: all .2s ease-in-out;
+        opacity: 1;
+        font-size: 5vw;
+        color: #F27127;
+    }
+
+    #P-Polar-bear:hover {
+        opacity: 1;
+        transition: all .2s ease-in-out;
+        font-size: 5vw;
+        color: #E9ECF2;
     }
     
     .file-upload {
@@ -495,13 +553,6 @@
     
     .background-text {
         position: absolute;
-        text-shadow: 0.6vw 1vw 0 rgba(0, 0, 0, 0.35);
-        font-family: 'Oswald';
-        font-size: 4vh;   
-        opacity: 0.5;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
         margin: 1vw 7.1vw 0 1vw;
         line-height: 1.07;
         letter-spacing: normal;
@@ -514,6 +565,42 @@
         -ms-user-select: none;
         user-select: none;
         z-index: 2;
+    } 
+
+    .background-text-details {
+        text-shadow: 0.3vw 0.3vw 0 rgba(0, 0, 0, 0.35);
+        font-family: 'Oswald';
+        font-size: 3vw;
+        opacity: 0.5;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        transition: all .2s ease-in-out;
+    }  
+
+    .change-theme{
+        text-shadow: 0.3vw 0.3vw 0 rgba(0, 0, 0, 0.35);
+        font-family: 'Oswald';
+        font-size: 3vw;
+        opacity: 0.5;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        transition: all .2s ease-in-out;
+    }
+
+    #F-fox:hover {
+        transition: all .2s ease-in-out;
+        opacity: 1;
+        font-size: 5vw;
+        color: #F27127;
+    }
+
+    #P-Polar-bear:hover {
+        opacity: 1;
+        transition: all .2s ease-in-out;
+        font-size: 5vw;
+        color: #E9ECF2;
     }
     
     .file-upload {
@@ -737,13 +824,6 @@
     
     .background-text {
         position: absolute;
-        text-shadow: 0.3vw 0.3vw 0 rgba(0, 0, 0, 0.35);
-        font-family: 'Oswald';
-        font-size: 3vw;
-        opacity: 0.5;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
         margin: 1vw 7.1vw 0 1vw;
         line-height: 1.07;
         letter-spacing: normal;
@@ -756,6 +836,42 @@
         -ms-user-select: none;
         user-select: none;
         z-index: 2;
+    } 
+
+    .background-text-details {
+        text-shadow: 0.3vw 0.3vw 0 rgba(0, 0, 0, 0.35);
+        font-family: 'Oswald';
+        font-size: 3vw;
+        opacity: 0.5;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        transition: all .2s ease-in-out;
+    }  
+
+    .change-theme{
+        text-shadow: 0.3vw 0.3vw 0 rgba(0, 0, 0, 0.35);
+        font-family: 'Oswald';
+        font-size: 3vw;
+        opacity: 0.5;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        transition: all .2s ease-in-out;
+    }
+
+    #F-fox:hover {
+        transition: all .2s ease-in-out;
+        opacity: 1;
+        font-size: 5vw;
+        color: #F27127;
+    }
+
+    #P-Polar-bear:hover {
+        opacity: 1;
+        transition: all .2s ease-in-out;
+        font-size: 5vw;
+        color: #E9ECF2;
     }
     
     .file-upload {
