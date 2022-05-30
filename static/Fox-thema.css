@@ -1,6 +1,6 @@
 :root {
-    --backgroundColor : #36b1c0;
-    --backgroundText : #b7e7f3;
+    --backgroundColor : #00A0A3;
+    --backgroundText : #F2F0F2;
     --uploadImage-To-Web-btn : #f29f05;
     --uploadImage-To-Web-btn-border : #B37504;
     --uploagImage-To-Server-btn : #5CF58A;
@@ -875,7 +875,7 @@
         transition: all .2s ease-in-out;
     }   
 
-    #F-fox:hover {
+    #F-fox {
         transition: all .2s ease-in-out;
         opacity: 1;
         font-size: 5vw;

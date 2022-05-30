@@ -1,12 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h3>Fox</h3>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="screen" href="../static/Fox-thema.css">
+        <link rel="stylesheet" media="screen" href="../static/Fox.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <title>PROJECT PAI</title>
+    </head>
+
+    <body>
+        <!--최상위 부모요소-->
+        <div style="position: relative;">
+
+            <!--배경 텍스트 -->
+            <div class="background-text">
+                <span class="background-text-details">E.S.C</span><br>
+                <span class="background-text-details">ENDANGERED</span><br>
+                <span class="background-text-details">S</span>
+                <a class="change-theme" id="P-Polar-bear" onclick="window.location.href='main/Polarbear'">P</a>
+                <span class="background-text-details">ECIES CATCH</span><br>
+                <span class="background-text-details">YOU CAN</span><br>
+                <a class="change-theme" id="F-fox" onclick="window.location.href='main/Fox'">F</a>
+                <span class="background-text-details">IND</span><br>
+                <span class="background-text-details">ENDANGERED</span><br>
+                <span class="background-text-details">S</span>
+                <a class="change-theme" id="P-Polar-bear" onclick="window.location.href='main/Polarbear'">P</a>
+                <span class="background-text-details">ECIES</span><br>
+            </div>
+
+            <!--파일 업로드 폼-->
+            <form action="http://127.0.0.1:8000/main" method="POST" enctype="multipart/form-data">
+
+                <!--박스 클릭시 사진 업로드-->
+                <div class="image-upload-wrap">
+                    <input class="file-upload-input" type='file' onmouseover="return turnOnWindowYellow();"
+                        onmouseout="return turnOffWindow();" onchange="readURL(this);" accept="image/*" name="file" />
+                    <div class="drag-text">
+                        <h3>Drag and drop a file or select add Image</h3>
+                    </div>
+                </div>
+
+                <!--버튼 클릭시 사진 업로드-->
+                <button class="file-upload-btn" type="button" onmouseover="return turnOnWindowYellow();"
+                    onmouseout="return turnOffWindow();" onclick="$('.file-upload-input').trigger( 'click' )">
+                    <a class="file-upload-btn-text">UPLOAD IMAGE 💾</a>
+                </button>
+
+                <div class="img-uploaded-action">
+                    <!--업로드된 사진을 지우는 버튼-->
+                    <div class="file-upload-content-2">
+                        <div class="image-title-wrap file-edit-icon">
+                            <button type="button" onmouseover="return turnOnWindowRed();"
+                                onmouseout="return turnOffWindow();" class="remove-image preview-de">
+                                Remove Uploaded
+                            </button>
+                        </div>
+                    </div>
+
+                    <!--업로드된 사진을 서버로 보내는 버튼-->
+                    <input class="file-upload-to-server" onmouseover="return turnOnWindowGreen();"
+                        onmouseout="return turnOffWindow();" type="submit" value="ANALYZE PHOTO">
+
+                    <!--업로드된 이미지가 들어가게 됨-->
+                    <div class="file-upload-content">
+                        <img class="file-upload-image" src="#" alt="your image" />
+                    </div>
+                </div>
+            </form>
+
+            <!--기하학 여우 그림-->
+            <div class="fox">
+                <div class="shoulder"></div>
+                <div class="neck"></div>
+                <div class="nose-under"></div>
+                <div class="face"></div>
+                <div class="forehead"></div>
+                <div class="ear-left-detail"></div>
+                <div class="cheeks"></div>
+                <div class="high-cheeks"></div>
+                <div class="ear-left"></div>
+                <div class="more-ear-left-detail"></div>
+                <div class="more-more-ear-left-detail"></div>
+                <div class="ear-right-detail"></div>
+                <div class="ear-right"></div>
+                <div class="more-ear-right-detail"></div>
+                <div class="more-more-ear-right-detail"></div>
+                <div class="nose-upper"></div>
+                <div class="chin-nose"></div>
+                <div class="nose"></div>
+                <div class="jaw-right"></div>
+                <div class="jaw-left"></div>
+                <div class="jaw"></div>
+                <div class="underbelly"></div>
+                <div class="belly"></div>
+                <div class="back"></div>
+                <div class="left-arm"></div>
+                <div class="stomach"></div>
+                <div class="more-belly"></div>
+                <div class="back-detail"></div>
+                <div class="leg-right"></div>
+                <div class="leg-left"></div>
+                <div class="bum"></div>
+                <div class="tail"></div>
+                <div class="tail-middle"></div>
+                <div class="tail-end"></div>
+                <div class="shoulder"></div>
+                <div class="neck"></div>
+                <div class="nose-under"></div>
+                <div class="face"></div>
+                <div class="forehead"></div>
+                <div class="ear-left-detail"></div>
+                <div class="cheeks"></div>
+                <div class="high-cheeks"></div>
+                <div class="ear-left"></div>
+                <div class="more-ear-left-detail"></div>
+                <div class="more-more-ear-left-detail"></div>
+                <div class="ear-right-detail"></div>
+                <div class="ear-right"></div>
+                <div class="more-ear-right-detail"></div>
+                <div class="more-more-ear-right-detail"></div>
+                <div class="nose-upper"></div>
+                <div class="chin-nose"></div>
+                <div class="nose"></div>
+                <div class="jaw-right"></div>
+                <div class="jaw-left"></div>
+                <div class="jaw"></div>
+                <div class="underbelly"></div>
+                <div class="belly"></div>
+                <div class="back"></div>
+                <div class="left-arm"></div>
+                <div class="stomach"></div>
+                <div class="more-belly"></div>
+                <div class="back-detail"></div>
+                <div class="leg-right"></div>
+                <div class="leg-left"></div>
+                <div class="bum"></div>
+                <div class="tail"></div>
+                <div class="tail-middle"></div>
+                <div class="tail-end"></div>
+                <div class="tail-detail"></div>
+            </div>
+    </body>
+    <script type="text/javascript" src="../static/js/fileUpload.js"></script>
+
+    </html>
+
 </body>
+
 </html>

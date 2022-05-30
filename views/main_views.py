@@ -20,11 +20,11 @@ def handle_404(err):
 def main():
     return render_template('index.html')
 
-@bp.route('/main/Fox')
+@bp.route('/Fox')
 def Fox():
     return render_template('AnimalTheme/Fox.html')
 
-@bp.route('/main/Polarbear')
+@bp.route('/Polarbear')
 def Polarbear():
     return render_template('AnimalTheme/Polarbear.html')
 
